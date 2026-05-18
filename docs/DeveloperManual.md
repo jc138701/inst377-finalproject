@@ -15,7 +15,6 @@ This application is a full-stack weather-based outfit recommendation system that
 
 ## Frontend
 - React
-- Tailwind CSS
 - Vite
 
 ## Backend
@@ -74,7 +73,7 @@ SUPABASE_KEY=sb_publishable_wrcY6vwqPHQaZ1akef64aw_APvSjVId
 
 
 # Running App
-cd server
+cd client
 npm run dev
 
 # Running Test
@@ -148,10 +147,10 @@ Machine learning personalization
 
 
 # Frontend Deployment
-Vercel
+Vercel(Pain)
 
 # Backend Deployment
-Vercel 
+Vercel(Pain2x)
 
 # Database
 Supabase
