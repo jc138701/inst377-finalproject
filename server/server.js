@@ -11,6 +11,7 @@ dotenv.config();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"))
 app.use(cors());
+
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
@@ -19,6 +20,9 @@ const PORT = process.env.PORT || 3000;
 const weatherRoutes = require("./routes/weatherRoutes");
 const wardrobeRoutes = require("./routes/wardrobeRoutes");
 
+app.get("/", (req, res) => {
+  res.send("IntelliFit API is running");
+});
 app.use("/api/wardrobe", wardrobeRoutes);
 app.use("/api/weather", weatherRoutes);
 
